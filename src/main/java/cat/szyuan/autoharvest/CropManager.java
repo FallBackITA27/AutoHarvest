@@ -218,7 +218,7 @@ public class CropManager {
     }
 
     public static boolean isJungleLog(BlockState s) {
-        return s.getBlock() == Blocks.JUNGLE_LOG;
+        return (s.getBlock() == Blocks.JUNGLE_LOG) || (s.getBlock() == Blocks.STRIPPED_JUNGLE_LOG);
     }
 
     public static boolean isRod(ItemStack stack) {
